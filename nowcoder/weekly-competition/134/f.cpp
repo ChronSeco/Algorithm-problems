@@ -1,6 +1,6 @@
-#include<iostream>
-#include<vector>
-#include<string>
+#include <iostream>
+#include <vector>
+#include <string>
 using ll = long long;
 ll MOD = 998244353;
 
@@ -10,7 +10,7 @@ void solve() {
     std::cin >> n >> str;
     std::vector<std::vector<bool>> s(n + 1, std::vector<bool>(n + 1, 0));
 
-    for (ll i = 0;i < n;i++) {
+    for (ll i = 0; i < n; i++) {
         ll le = i, ri = i;
         while (le >= 0 && ri < n && str[le] == str[ri]) {
             s[le + 1][ri + 1] = 1;
@@ -27,8 +27,8 @@ void solve() {
 
     std::vector<ll> an(n + 1, 0), jia(n + 1, 0);
     an[0] = 1;
-    for (ll r = 1;r <= n;r++) {
-        for (ll l = 1;l <= r;l++) {
+    for (ll r = 1; r <= n; r++) {
+        for (ll l = 1; l <= r; l++) {
             if (s[l][r]) {
                 an[r] += an[l - 1];
                 an[r] %= MOD;
