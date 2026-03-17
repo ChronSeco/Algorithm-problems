@@ -1,7 +1,7 @@
-#include<iostream>
-#include<utility>
-#include<vector>
-#include<cmath>
+#include <iostream>
+#include <utility>
+#include <vector>
+#include <cmath>
 using ll = long long;
 using ld = long double;
 using ull = unsigned long long;
