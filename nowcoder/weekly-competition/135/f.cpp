@@ -1,7 +1,7 @@
-#include <iostream>
-#include <utility>
-#include <vector>
-#include <map>
+#include<iostream>
+#include<utility>
+#include<vector>
+#include<map>
 using ll = long long;
 using ld = long double;
 using ull = unsigned long long;
@@ -30,7 +30,7 @@ void solve() {
     for (ll i = 0; i < k; i++) {
         ll x, y;
         std::cin >> x >> y;
-        yu.push_back({x, y});
+        yu.push_back({ x, y });
         no[x]++;
         mo[y]++;
         if (no[x] == 1) ten++;

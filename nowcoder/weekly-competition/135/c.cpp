@@ -1,6 +1,6 @@
-#include <iostream>
-#include <vector>
-#include <unordered_map>
+#include<iostream>
+#include<vector>
+#include<unordered_map>
 using ll = long long;
 
 void solve() {
@@ -19,14 +19,16 @@ void solve() {
             std::cout << "YES" << "\n";
         else
             std::cout << "NO" << "\n";
-    } else if (n <= 3) {
+    }
+    else if (n <= 3) {
         if (arr[0] == 1 && arr[1] == 2 && arr[2] == 3)
             std::cout << "YES" << "\n";
         else if (arr[0] == 3 && arr[1] == 2 && arr[2] == 1)
             std::cout << "YES" << "\n";
         else
             std::cout << "NO" << "\n";
-    } else if (n > 3)
+    }
+    else if (n > 3)
         std::cout << "YES" << "\n";
 }
 

@@ -1,6 +1,6 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include<iostream>
+#include<vector>
+#include<algorithm>
 using ll = long long;
 
 void solve() {
@@ -21,7 +21,8 @@ void solve() {
     for (ll i = 0; i < n - 1; i++) {
         if (sum_fu + arr[i] < 0) {
             sum_fu += sum_fu + arr[i];
-        } else {
+        }
+        else {
             ans += arr[i] + sum_fu;
             ju = 0;
         }

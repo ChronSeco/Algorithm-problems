@@ -1,7 +1,7 @@
-#include <iostream>
-#include <vector>
-#include <map>
-#include <algorithm>
+#include<iostream>
+#include<vector>
+#include<map>
+#include<algorithm>
 using ll = long long;
 
 void solve() {

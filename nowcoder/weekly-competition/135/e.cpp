@@ -1,7 +1,7 @@
-#include <iostream>
-#include <utility>
-#include <vector>
-#include <cmath>
+#include<iostream>
+#include<utility>
+#include<vector>
+#include<cmath>
 using ll = long long;
 using ld = long double;
 using ull = unsigned long long;
@@ -31,7 +31,8 @@ void solve() {
                 if (a[i - 1] + j == a[i] + k) continue;
                 if (k > 0) {
                     dp[i][k + 2] = std::min(dp[i][k + 2], dp[i - 1][j + 2] + k * b[i]);
-                } else {
+                }
+                else {
                     dp[i][k + 2] = std::min(dp[i][k + 2], dp[i - 1][j + 2] + abs(k) * c[i]);
                 }
             }
